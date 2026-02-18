@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A fully structured HTML page" />
+    <title>My Complete Website</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the World of HTML</h1>
+      <p>
+        This page contains various
+        <span style="font-weight: bold">commonly used HTML elements</span>.
+      </p>
+    </header>
+    <section>
+      <h2>Topics Covered:</h2>
+      <ul>
+        <li>HTML structure</li>
+        <li>Meta tags</li>
+        <li>Headings, paragraphs, spans, divs</li>
+        <li>Lists</li>
+        <li>Tables</li>
+        <li>Forms</li>
+      </ul>
+    </section>
+    <section>
+      <h2>HTML Tags and Their Function</h2>
+      <table border="1">
+        <tr>
+          <th>Tag</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td>&lt;h1&gt;</td>
+          <td>The main heading in a document</td>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;</td>
+          <td>Used to denote a paragraph of text</td>
+        </tr>
+        <tr>
+          <td>&lt;div&gt;</td>
+          <td>
+            Creates a block-level container that acts like a cardboard box
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;span&gt;</td>
+          <td>An inline-level container used as a hook for pieces of text</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>Signup Form</h2>
+      <form action="">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+        <br />
+        <label for="phone">Phone Number (optional):</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+        <br>
+        <select name="country" id="country">
+          <option value="">Please Choose</option>
+          <option value="USA">USA</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Canada">Canada</option>
+        </select>
+        <br />
+        <br />
+        <button type="submit">Sign up</button>
+      </form>
+    </section>
+    <footer>
+      <p>Created By Jaycob Gomez - 2026</p>
+    </footer>
+  </body>
+</html>

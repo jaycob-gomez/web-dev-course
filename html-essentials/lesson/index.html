@@ -1,0 +1,78 @@
+<!-- html defines the structure of content on a webpage -->
+<!-- we use tags to tell the browser how it should interpret content-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Learn HTML easily" />
+    <meta name="keywords" content="HTML, CSS, Javascript" />
+    <meta name="author" content="Jaycob Gomez" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <!-- header tags h1-h6 -->
+    <h1>Main Heading (h1)</h1>
+    <h2>Sub Header (h2)</h2>
+    <h3>Section title (h3)</h3>
+    <h4>Smaller title (h4)</h4>
+    <h5>Minor heading (h5)</h5>
+    <h6>Smallest heading (h6)</h6>
+    <p>This is a paragraph tag (p)</p>
+
+    <div style="background-color: lightgray; padding: 10px">
+      <h3>Div section</h3>
+      <p>This is a block level container using &lt;div&gt;</p>
+    </div>
+
+    <p>
+      Using a span creates an
+      <span style="color: red">inline container</span> for hooking onto text for
+      styling
+    </p>
+
+    <!-- Tables -->
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jaycob</td>
+        <td>23</td>
+      </tr>
+    </table>
+
+    <!-- Lists -->
+    <ul>
+      <li>HTML structure</li>
+      <li>Meta tags</li>
+      <li>Headings, paragraphs, spans, divs</li>
+      <li>Lists</li>
+      <li>Tables</li>
+      <li>Forms</li>
+    </ul>
+
+    <!-- Forms -->
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" />
+      <br />
+      <select name="country" id="country">
+        <option value="">Please Choose</option>
+        <option value="USA">USA</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Canada">Canada</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Sign up</button>
+    </form>
+  </body>
+</html>
