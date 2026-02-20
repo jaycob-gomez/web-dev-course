@@ -1,0 +1,16 @@
+article {
+  box-sizing: border-box;
+  width: fit-content;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  margin-inline: auto;
+}
+
+article h2 {
+  font-size: 30px;
+}
+
+p + p {
+  font-weight: bold;
+}
