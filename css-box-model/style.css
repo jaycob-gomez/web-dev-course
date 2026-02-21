@@ -1,6 +1,7 @@
 article {
   box-sizing: border-box;
   width: fit-content;
+  height: 250px;
   padding: 30px 50px;
   border-radius: 10px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
