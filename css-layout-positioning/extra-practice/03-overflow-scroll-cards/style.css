@@ -1,0 +1,53 @@
+/* Step 1: Layout so overlfow is easy to see */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.page {
+  margin-inline: auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+.row {
+    display: grid;
+    gap: 1rem;
+}
+
+.box {
+    height: 100px;
+}
+
+/* Step 2: Base box styling */
+.box {
+    background-color: burlywood;
+}
+
+.long-content {
+    white-space: nowrap;
+}
+
+/* Step 3: Overflow visible */
+
+.box--visible {
+    overflow: visible;
+}
+
+/* Step 4: Overflow hidden */
+
+.box--hidden {
+    overflow: hidden;
+}
+
+/* Step 5: Overflow scroll */
+
+.box--scroll {
+    overflow: scroll;
+}
+
+/* Step 6: Overflow auto */
+
+.box--auto {
+    overflow: auto;
+}
