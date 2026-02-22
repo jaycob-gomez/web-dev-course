@@ -1,0 +1,94 @@
+/* Custom properties */
+
+:root {
+  --clr-primary: #7ed9a3;
+  --clr-secondary: #ffc9a9;
+  --clr-accent: #ff6b6b;
+
+  --clr-background: #fff9f3;
+  --clr-card: #fff;
+
+  --clr-in-stock: #2ecc71;
+  --clr-low: #f39c12;
+  --clr-sold-out: #e74c3c;
+
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+  --text-light: var(--clr-card);
+}
+
+/* Step 1: Set the page background and base font */
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--clr-background);
+}
+
+/* Step 2: Center the card */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Step 3: Card styling */
+
+.card {
+  background-color: var(--clr-card);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-color: var(--clr-primary);
+}
+
+ul li + li {
+  margin-top: 20px;
+}
+
+ul {
+  margin-bottom: 50px;
+}
+
+/* Step 4: Text colors for hierarchy */
+
+.title {
+  font-size: 40px;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  margin-bottom: 50px;
+}
+
+.subtitle,
+.name {
+  color: var(--text-secondary);
+}
+
+/* Step 5: Badge colors */
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 100px;
+  color: var(--text-light);
+}
+
+.badge--good {
+  background-color: var(--clr-in-stock);
+}
+
+.badge--warn {
+  background-color: var(--clr-low);
+}
+
+.badge--bad {
+  background-color: var(--clr-sold-out);
+}
