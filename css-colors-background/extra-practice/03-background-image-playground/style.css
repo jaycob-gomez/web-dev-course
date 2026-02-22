@@ -1,0 +1,33 @@
+/* Step 1: Set the hero height + base text color */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero {
+  color: white;
+  height: 70vh;
+
+  /* Step 2: Add background image */
+  background-image: url("assets/hero-bg.svg");
+
+  /* Step 3: Control size, position, repeat */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Step 4: Add a second background layer */
+
+.hero {
+  background-image: url("assets/dots.svg"), url("assets/hero-bg.svg");
+  background-size: 260px, cover;
+  background-repeat: repeat, no-repeat;
+  background-position:
+    top left,
+    center;
+
+  /* Step 5: Background attachment */
+  background-attachment: fixed;
+}
