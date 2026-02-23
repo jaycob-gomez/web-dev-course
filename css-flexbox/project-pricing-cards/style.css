@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pricing {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+.card:first-child::before {
+  content: "$3 ";
+}
+
+.card:nth-child(2)::before {
+  content: "$5 ";
+}
+
+.card:last-child::before {
+  content: "$10 ";
+}
