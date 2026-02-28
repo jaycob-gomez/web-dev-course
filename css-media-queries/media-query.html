@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query Rules</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Tablet */
+
+      @media (width < 768px) {
+        body {
+          background-color: lightgray;
+        }
+      }
+
+      /* Mobile */
+
+      @media (width < 600px) {
+        body {
+          background-color: lightpink;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Resize the window to change background color</h1>
+  </body>
+</html>
